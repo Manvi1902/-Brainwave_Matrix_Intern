@@ -1,7 +1,5 @@
 let mytask =[];
 
-//inputbox == taskinput
-
 function addTask(){
     const inputBox = document.getElementById("input-box");
     const text = inputBox.value.trim();
@@ -74,36 +72,6 @@ document.getElementById('newTask').addEventListener('click', function(event){
 
 
 
-
-
-
-
-
-
-
-/*
-
-const inputBox = document.getElementById("input-box");
-const listBox = document.getElementById("list-box");
-
-function addTask(){
-    if(inputBox.value === ''){
-        alert("You must write your task!");
-    }else{
-
-        //insert items
-        let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
-        listBox.appendChild(li);
-
-        //delete itemns
-        let span = document.createElement("span");
-        span.innerHTML= "\u00d7" ; // cross icon
-        li.appendChild(span);
-    }
-    inputBox.value="";
-}
-*/
 
 
 
