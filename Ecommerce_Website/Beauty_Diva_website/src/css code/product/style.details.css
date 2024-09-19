@@ -1,0 +1,94 @@
+ 
+ :root {
+     --light-pink-color: #ff92e8  ;
+     --barbie-pink-color: #df20b7;
+     --secondary-bg-color:#ffeff4;
+     --primary-bg-color:#ffe0e9;
+     --main-color:#ffc0cb;
+     --second-color:  #4a353b;
+     --background-color:white; /* Define a root variable for primary color */
+   }
+   body{
+     background-color: var(--secondary-bg-color);
+   }
+ .product-details-container{  
+     background-color: var(--secondary-bg-color);
+     display: flex;  
+     align-items: center;  
+     justify-content: center;  
+     height: 100%;  
+     margin-top:5px;
+     margin-bottom: 20rem;
+ }  
+ .product-details {  
+    
+     display: flex;
+     flex-direction: row;
+     background-color:var(--primary-bg-color);
+     align-items: center;  
+     justify-content: center; 
+     margin-top: 10rem;   
+     padding-left:10px;  
+     border-radius: 8px;  
+     width: 900px;
+     height:500px;
+     color: black;
+     box-shadow: 0 0 16px grey;
+    
+ }  
+ .product-img {
+     width:380px;
+     height:370px;
+     margin-right: 15px;
+     margin-left: 50px;
+     background-color:none;
+     border-right: 1px solid grey;
+     border-radius: 0px;
+     box-shadow: 0 0 5px solid var(--light-pink-color);
+     object-fit: fill;
+ }
+ .product-img img{
+     width:100%;
+     height:100%;   
+ }
+ .add-to-cart{
+     background-color: var(--barbie-pink-color);
+     width: 20rem;
+     height: 50px;
+     margin-top: 3rem;
+     align-items: center; 
+     color:white; 
+     border-radius: 5px;
+ }
+ .add-to-cart:hover{
+     border: 3px solid var(--light-pink-color);
+     opacity: 0.8;
+     
+ }
+
+ .quantity{
+     padding: 10px;
+     margin-top:3px;
+ }
+ .stock-element-box{
+     display: flex;
+     gap: 10px;
+     text-align: center;
+     align-items: center;
+     border-radius: 50%;
+     margin:0.8rem 0;
+
+ & button {
+  background-color: var(--barbie-pink-color);
+  width: 25px;
+  height: 25px;
+  border-radius: 40%;
+  font-size: medium;
+  color: white;
+  &:hover {
+      cursor: pointer;
+  }
+}}
+ 
+
+
