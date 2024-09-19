@@ -1,0 +1,66 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+ 
+}
+:root {
+  --secondary-color: #df20b7;
+  --dark-peach-color: #ff6b6b;  
+  --secondary-bg-color:#ffeff4;
+  --primary-bg-color:#ffe0e9;
+  --main-color:#ffc0cb;
+  --second-color:  #82223d;
+  --background-color:white;
+  --light-pink-color: #ff92e8  ;
+  --barbie-pink-color: #df20b7;
+  --light-peach-color2:#ffeff4;
+  --light-peach-color:#ffe0e9;
+  --peach-color:#ffc0cb;
+  --brown-color:  #4a353b;
+}
+
+
+body{
+  background-color:var( --secondary-bg-color);
+
+}
+.cart-value{
+  color:red;
+  font-size: small;
+  display: block;
+  margin-top: -2rem;
+  margin-left: 1.7rem;
+  height: 17px;
+  width: 17px;
+  padding-left: 2px;
+  font-weight: 600;
+  background-color:white;
+  border-radius: 50%;
+}
+
+.container{
+  display:grid;
+  height: 100vh;
+  grid-gap: 20px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows:  100px 350px 500px 200px 480px 400px 300px;
+}
+
+.grid-item{
+    background-color:none;
+    grid-column: 1/-1;
+}
+.grid-item  img{
+  padding-left:0;
+  height:600px;
+  width:100%;
+  margin-top: 0;
+}
+
+
+
