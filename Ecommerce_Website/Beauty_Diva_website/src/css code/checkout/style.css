@@ -1,0 +1,127 @@
+
+.product-cart-container{  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    height: 100%;  
+    margin-top:5px;
+}  
+
+.cart-container {  
+    display: flex;  
+    flex-direction: row;  
+    margin: 30px;  
+    margin-left: 6rem;
+    background-color:var(--light-peach-color2);
+    border-radius: 10px;
+    overflow: hidden;
+    border:none;
+    box-shadow: 0 0 3px gray;
+}  
+
+.row {  
+    display: flex;  
+    align-items: center;  
+    border-bottom: 1px solid #ccc;  
+    padding: 10px 0;  
+    height:180px;
+    width: 1200px;
+    background-color:var(--light-peach-color);
+   
+   
+}  
+
+.column {  
+    display: flex;
+    align-items: center;
+    background-color:var(--peach-color);
+    height: 70px;
+    width: 50px;
+    font-size: large;
+    font-weight: 500;
+    flex:1;  
+    text-align: center; 
+    border-radius: none;
+    background-color:none;
+    justify-content:space-evenly;
+    
+    
+}  
+.img-column{
+    width:20px; 
+    height:150px;  
+    margin-left: 20px;
+    object-fit: fill;
+    border: none;
+}
+
+.img-column img { 
+    width:100%; /* Set a reasonable width for images */  
+    height:100%;  
+   /* Optional: add rounded corners */  
+}  
+.product-name{
+    margin-left: 1rem;
+    padding-left: 15px;
+}
+
+
+
+.quantity{
+    padding: 10px;
+    margin-top:3px;
+}
+.stock-element{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: none;
+    margin:0.8rem 0;
+
+& button {
+ background-color: lightcoral;
+ width: 25px;
+ height: 25px;
+ border-radius: 40%;
+ border:none;
+ font-size: medium;
+ color: white;
+ &:hover {
+     cursor: pointer;
+ }
+}}
+
+.delete-button{
+    border:none;
+    background-color:var(--light-peach-color);  
+}
+.delete-to-cart-btn {  
+    background-color:var(--peach-color); /* Red color */  
+    color: white;  
+    border: none;  
+   
+    padding: 5px 10px;  
+    cursor: pointer;  
+    border-radius:50%; 
+    object-fit: fill;
+    
+}  
+
+.delete-to-cart-btn:hover {  
+    border:1px solid black; /* Darker red on hover */  
+}
+
+.delete-icon{
+    width:40px;
+    height:40px;
+}
+.productCartTotalContainer{
+    display: block;
+    margin-top: 20rem;
+    margin-left: 40%;
+    height: 250px;
+    width: 300px;
+    padding: 30px;
+    background-color: #eae0e0;
+}
