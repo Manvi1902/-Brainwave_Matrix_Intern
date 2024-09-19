@@ -1,0 +1,122 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/base.style.css">  
+    <link rel="stylesheet" href="css/navbar/style.css">
+    <link rel="stylesheet" href="css/checkout/style.css">
+
+</head>  
+
+<body>  
+<main>
+<section class="container">
+           
+    <nav class="header">
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                </div>
+                <div class="logo">
+                    <img src="assests/logo.png" alt="text"/>
+                    <span><p>Beauty Diva</p></span>
+                </div>
+                <ul id="menuList">
+                    <li><a href="index.html" class="lists">Home</a></li>
+                    <li><a href="productItems.html" class="lists">Product</a></li>
+                    <li><a href="contactPage.html" class="lists">contact</a></li>
+                     
+                </ul>   
+     
+                <ul id="ul2">
+                    <li><a href="#" class="menulist2">
+                            <img  src="assests/profile.svg" alt="text" class="icons"/>
+                         
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menulist2">
+                            <img  src="assests/heart.svg" alt="text" class="icons"/>
+                         
+                        </a>
+                    </li>
+                    <li>
+                        <a href="checkout.html" class="menulist-cart">
+                            <img  src="assests/cart.svg" alt="text" class="cart-icon"/><i class="cart-value">0</i>
+                        </a>
+                    </li>
+                     
+                </ul>       
+    </nav>
+
+
+   <section class="addToCartElement">
+                    <div class="container">
+                        <section>
+                                <div id="productCartContainer">
+
+                                </div>
+                        </section>
+
+                     <!--  <section  class="productCartTotalContainer">
+                            <div class="productCartTotalElem">
+                                <p>selected Offer Summary</p>
+                                <div class="productOrderTotal">
+                                    <div>
+                                        <p>Sub Total:</p>
+                                        <p class="productSubTotal">0</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <p>Tax :</p>
+                                        <p class="productTax">Rs.50</p>
+                                    </div>
+                                    <hr/>
+                                    <div>
+                                        <p>Final Price :</p>
+                                        <p class="productFinalTotal">0</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>--> 
+                    </div>
+   </section>
+
+    <template id="productCartTemplate">
+        <div class="cart-container" id="cartValue">  
+            <div class="row">  
+                <div class="column img-column">  
+                    <img class="product-image" src="" alt="img" />  
+                </div>  
+                <div class=" column product-name">
+                    <h3 class="product-name"></h3>
+                </div>  
+                <div class="column cart-price ">
+                    <h4 class="product-price"></h4>
+                </div>  
+               
+                <div class="stock-element column" id='stock-element' >  
+                    <button class="cartIncrement">+</button>  
+                        <p class="product-quantity">1</p>  
+                    <button class="cartDecrement">-</button>  
+                </div>  
+             
+                <div class="column  delete-button ">  
+                    <button class="delete-to-cart-btn">
+                        <img  class="delete-icon" src="assests/delete-img.png " alt="Delete Product"/>
+                    </button>  
+                </div>  
+            </div> 
+        </div>
+    </template>   
+</section>
+</main>
+
+
+
+<script  type="module"  src="js/checkout.js"></script> 
+</body>  
+</html>

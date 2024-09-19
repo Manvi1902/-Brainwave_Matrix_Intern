@@ -1,0 +1,108 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Product Details</title>  
+    <link rel="stylesheet" href="css/base.style.css">
+    <link rel="stylesheet" href="css/navbar/style.css">
+    <link rel="stylesheet" href="css/product/style.details.css">
+    <link rel="stylesheet" href="css/checkout/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    
+</head>  
+<body>  
+    <main>
+        <section class="container">
+           
+            <nav class="header">
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                </div>
+                <div class="logo">
+                    <img src="assests/logo.png" alt="text"/>
+                    <span><p>Beauty Diva</p></span>
+                </div>
+                <ul id="menuList">
+                    <li><a href="index.html" class="lists">Home</a></li>
+                    <li><a href="productItems.html" class="lists">Product</a></li>
+                    <li><a href="contactPage.html" class="lists">contact</a></li>
+                </ul>   
+     
+                <ul id="ul2">
+                    <li><a href="#" class="menulist2">
+                            <img  src="assests/profile.svg" alt="text" class="icons"/>
+                         
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menulist2">
+                            <img  src="assests/heart.svg" alt="text" class="icons"/>
+                         
+                        </a>
+                    </li>
+                    <li>
+                        <a href="checkoutPage.html" class="menulist-cart">
+                            <img  src="assests/cart.svg" alt="text" class="cart-icon"/><i class="cart-value">0</i>
+                        </a>
+                    </li>
+                     
+                </ul>       
+            </nav>
+
+    
+<div class="grid-item product-details-container">
+
+    <div  class="product-details" id="productId">
+        <!-------------------product-image-------------------------->
+        <div class="product-img box">
+            <img src="" alt="productimage"/> <span id="product-image"></span>
+        </div>
+
+        <!-----------------product-details--------------------->
+        <div>  
+            <h2 class="text-xl font-bold" id="product-name"></h2> 
+
+            <div class="star-rating-box">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            </div>
+
+            <div class="product-description-box">
+                <p class="text-gray-700" id="product-description"></p> 
+            </div>
+            
+            <div class="product-price-box">
+                <p class="product-price"></p>
+                
+            </div>
+
+            <div class="product-stock-box">
+                <p class="total-prod-stock mt-2 text-lg font-semibold mr-1rem">Total Stocks: </p>
+                <p class="product-stock"></p>
+            </div>
+
+            <div class="product-qnty-box flex ">  
+                <p class=" quantity">Quantity</p>  
+                <div class="stock-element-box" id='stock-element' >  
+                   <button class="cartIncrement">+</button>  
+                   <p class="product-quantity">1</p>  
+                   <button class="cartDecrement">-</button>  
+                </div>  
+            </div>  
+
+                <button id="add-to-cart" class="add-to-cart">Add to Cart</button>  
+     
+        </div>  
+    </div>   
+</div>
+ 
+
+
+        
+</section>
+</main>
+    
+<script type="module" src="js/productDetails.js"></script>  
+</body>  
+</html>
