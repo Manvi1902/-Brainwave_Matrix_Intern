@@ -1,0 +1,112 @@
+
+.hero-section {  
+    position: relative;   
+    top: 0rem; 
+    left:6rem;  
+    bottom: 3rem;
+    height: 450px;  
+    width: 700px;   
+    overflow: hidden;  
+    color: white;  
+    text-align: center;  
+    background-color:var(--barbie-pink-color);
+}  
+.hero-slide {  
+    height: 450px;  
+    width: 900px;  
+    background-size: cover;  
+    background-position: center; 
+    background-color: var(--barbie-pink-color); 
+    object-fit:contain;
+  
+} 
+.hero-slider {  
+    display: flex;  
+    transition: transform 0.5s ease-in-out;  
+    height: 600px;  
+    width: 1000px; 
+    background-color: var(--barbie-pink-color);
+}  
+
+.hero-slide img{
+    height: 600px;  
+    width: 1000px;
+}
+
+.hero-title {  
+    position: absolute;  
+    top: 30%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    font-size: 2.5rem;  
+    font-weight: 600;   
+    color: var(--light-peach-color2);   
+    text-shadow: 2px 2px 2px var(--second-color);  
+    background-color: (var(--second-color));
+   
+}  
+.prev, .next {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    font-size: 24px;  
+    color: white;  
+    background-color: rgba(0, 0, 0, 0.5);  
+    border: none;  
+    padding: 10px;  
+    cursor: pointer;  
+    z-index: 100;  
+}  
+.prev {  
+    left: 20px;  
+}  
+.next {  
+    right: 20px;  
+}   
+
+
+
+
+/* Base styles (for larger screens) */  
+
+/* Mobile styles */  
+@media (max-width: 480px) {  
+    
+.hero-section {  
+    margin-left: 10rem; 
+}  
+.hero-slide {  
+    height: 450px;  
+    width: 800px; 
+    background-size: cover;  
+    background-position: center; 
+    background-color: var(--barbie-pink-color); 
+    object-fit: fill;
+} 
+.hero-slider {  
+    display: flex;  
+    transition: transform 0.5s ease-in-out;  
+    height: 600px;  
+    width: 800px; 
+    background-color: var(--barbie-pink-color);
+}  
+
+.hero-slide img{
+    height: 600px;  
+    width: 800px;
+}
+
+.hero-title {  
+    position: absolute;  
+    top: 20%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    font-size: 2.5rem;  
+    font-weight: 600;   
+    color: var(--light-peach-color2);   
+    text-shadow: 2px 2px 2px var(--second-color);  
+    background-color: (var(--second-color));
+   
+}  
+
+}  
