@@ -1,0 +1,143 @@
+
+.container{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../public/assests/logo.png");
+  background-repeat: no-repeat;
+  background-color:black;
+  background-size:contain; 
+  filter: blur(1px); /* Adjust the blur amount as needed */  
+  z-index: -1;  
+}
+
+
+.container::before{
+  content: '';
+  position: absolute;
+  height:100vh;
+  width: 100%;
+  left: 1rem;
+  top: 20;
+  background:var(--barbie-pink-color);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.content{
+  position: relative;  
+  z-index: 1;  
+  align-items: center;
+  padding-left:4rem;
+  max-width: 550px;
+  width: 100%;
+  height: 460px;
+  right: 12rem;
+  left:25%;
+  top:5rem;
+  border: none;
+  background-color: var(--light-peach-color2);
+  border-radius: 5px;
+  box-shadow: 0 0px 5px var(--second-color);
+}
+
+.content .topic{
+  font-size: 35px;
+  font-weight: 700;
+  align-items: center;
+  padding-left: 6rem;
+  padding-top: 2rem;
+  color:var(--barbie-pink-color);
+  text-shadow: 3px 3px 5px white
+}
+
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+  padding: 20px;
+}
+.content .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 380px;
+  border-radius: 3px;
+  font-size: 15px;
+  outline: none;
+  padding-left:20px;
+  background:var(--light-peach-color);
+  border:none;
+  box-shadow: 1px 1px 3px var(--second-color);
+  border-radius: 3px;
+
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color:var(--barbie-pink-color);
+  background-color:white;
+
+}
+
+.content .input-box label{
+  position: absolute;
+  left: 10%;
+  top: 85%;
+  color:black;
+  font-size: 16px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea{
+  position: absolute;
+  top:25px;
+  left:20px;
+  height: 100%;
+  width: 380px;
+  resize: none;
+  font-size: 16;
+  padding-top: 20px;
+  padding-left: 16px;
+  background:var(--light-peach-color);
+  border:none;
+  box-shadow: 1px 1px 3px var(--second-color);
+  border-radius: 3px;
+  outline: none;
+ 
+}
+.content .message-box textarea:focus{
+  border-color: var(--barbie-pink-color);
+  background-color:white;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color:black;
+  left: 10%;
+  top: 40%;
+  pointer-events: none;
+
+}
+
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: var(--barbie-pink-color);
+  padding-left: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor:pointer;
+  letter-spacing: 1px;
+ 
+}
+.content .input-box input[type="submit"]:hover{
+  background-color:var(--light-pink-color);
+  color: black;
+  
+}
